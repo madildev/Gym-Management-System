@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{6BEDC27C-B056-4AFC-ABEE-04220145D3EF}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>GymSystem</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddCustomer.cpp" />
+    <ClCompile Include="AddEquipment.cpp" />
+    <ClCompile Include="AddExercisePlan.cpp" />
+    <ClCompile Include="AddGymHall.cpp" />
+    <ClCompile Include="AddTrainer.cpp" />
+    <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="CustomerObject.cpp" />
+    <ClCompile Include="EditCustomer.cpp" />
+    <ClCompile Include="EditEquipment.cpp" />
+    <ClCompile Include="EditExercisePlan.cpp" />
+    <ClCompile Include="EditGymHall.cpp" />
+    <ClCompile Include="EditTrainer.cpp" />
+    <ClCompile Include="EquipmentObject.cpp" />
+    <ClCompile Include="ExercisePlan.cpp" />
+    <ClCompile Include="ExercisePlanObject.cpp" />
+    <ClCompile Include="GymHalls.cpp" />
+    <ClCompile Include="GymObject.cpp" />
+    <ClCompile Include="HallSechdule.cpp" />
+    <ClCompile Include="Home.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Equipments.cpp" />
+    <ClCompile Include="ShowSubscriptions.cpp" />
+    <ClCompile Include="Trainer.cpp" />
+    <ClCompile Include="TrainerObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddCustomer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddEquipment.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddExercisePlan.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddGymHall.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AddTrainer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Customer.h" />
+    <ClInclude Include="CustomerObject.h" />
+    <ClInclude Include="EditCustomer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditEquipment.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditExercisePlan.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditGymHall.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditTrainer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EquipmentObject.h" />
+    <ClInclude Include="Equipments.h" />
+    <ClInclude Include="ExercisePlan.h" />
+    <ClInclude Include="ExercisePlanObject.h" />
+    <ClInclude Include="GymHalls.h" />
+    <ClInclude Include="GymObject.h" />
+    <ClInclude Include="HallSechdule.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Home.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ShowSubscriptions.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Trainer.h" />
+    <ClInclude Include="TrainerObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEquipment.resx">
+      <DependentUpon>AddEquipment.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddExercisePlan.resx">
+      <DependentUpon>AddExercisePlan.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGymHall.resx">
+      <DependentUpon>AddGymHall.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTrainer.resx">
+      <DependentUpon>AddTrainer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCustomer.resx">
+      <DependentUpon>EditCustomer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditEquipment.resx">
+      <DependentUpon>EditEquipment.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditExercisePlan.resx">
+      <DependentUpon>EditExercisePlan.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditGymHall.resx">
+      <DependentUpon>EditGymHall.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTrainer.resx">
+      <DependentUpon>EditTrainer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HallSechdule.resx">
+      <DependentUpon>HallSechdule.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowSubscriptions.resx">
+      <DependentUpon>ShowSubscriptions.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
